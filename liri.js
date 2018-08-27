@@ -12,13 +12,13 @@ var fs = require("fs");
 //initialize spotify api client using client ID
 var spotify = new Spotify(keys.spotify);
 
-var getArtistName = function(artist){
+var getArtistNames = function(artist){
     return artist.name;
 
 };
-var getMeSpotify = function(someName){ 
-    if (someName === undefined) {
-        someName = "what's my age again"
+var getMeSpotify = function(songName){ 
+    if (songName === undefined) {
+        songName = "what's my age again"
     };
 
     spotify.search ({
